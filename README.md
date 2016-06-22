@@ -25,6 +25,14 @@ http://jshint.com/docs/</br>
 grunt-contrib-jshint is the grunt plugin:</br>
 https://www.npmjs.com/package/grunt-contrib-jshint</br>
 
+## Jasmine ##
+asmine is a behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests.
+https://github.com/nathanboktae/mocha-phantomjs
+
+## Mocha-phantomjs ##
+Run both on Browser and node
+https://github.com/nathanboktae/mocha-phantomjs
+
 ## Steps to run ##
 a. download this example and under the directory, npm install all dependencies in the package.json file.
 You may only need to npm install grunt globally first and then run "npm install" under the directory.

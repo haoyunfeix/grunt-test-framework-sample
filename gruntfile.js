@@ -24,12 +24,22 @@ module.exports = function(grunt) {
                 },
                 src: ['test/*.js']
             }
+        },
+        jasmine : {
+            test:{
+                src : 'test/jasmine/*.js',
+                options : {
+                  specs: 'spec/AnimalsSpec.js',
+                  keepRunner: true
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
 
-    grunt.registerTask('default',['concat', 'jshint', 'mochaTest']);
+    grunt.registerTask('default',['concat', 'jshint', 'mochaTest', 'jasmine']);
 }
